@@ -65,12 +65,17 @@ h6,
 .btn.btn-primary {
     border: 0;
 }
-
-.btn.btn-primary:hover {
-    background: var(--bs-dark) !important;
-    color: var(--bs-primary) !important;
+.navbar-brand img{
+    width: 100px;
 }
-
+.btn.btn-primary:hover {
+    background-color: #5f1525;
+    color: #fff !important;
+}
+.btn-primary{
+    background-color: #ff0043;
+    color: #FFFFFF;
+}
 .btn {
     font-weight: 600;
     transition: .5s;
@@ -125,7 +130,7 @@ h6,
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: #ff0043;
 }
 
 .navbar .dropdown-toggle::after {
@@ -178,7 +183,7 @@ h6,
 
 /*** Events Start ***/
 .event .tab-class .nav-item a.active {
-    background: var(--bs-primary) !important;
+    background: #ff0047 !important;
 }
 
 .event .event-img .event-overlay {
@@ -187,7 +192,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(212, 167, 98, 0.7);
+    background: #ff0606c3;
     border-radius: 8px;
     transition: 0.5s;
     opacity: 0;
@@ -217,8 +222,7 @@ h6,
     top: 0;
     left: 0;
     bottom: auto;
-    background-color: #374047;
-
+    background-color: #ff0047;
     border-radius: 8px;
     transition: 1s;
 }
@@ -261,7 +265,8 @@ h6,
 
 /*** Menu Start ***/
 .menu .nav-item a.active {
-    background: var(--bs-primary) !important;
+    background: #ff0043 !important;
+    color: #fff;
 }
 
 .menu .menu-item .border-bottom {
@@ -572,4 +577,23 @@ h6,
     width: 120px;
     height: 120px;
     margin-bottom: 15px;
+}
+
+
+
+
+/*  */
+.text-primare {
+    color: #ff0043;
+}
+.my-code{
+    color: #000000;
+    margin-bottom: 50px;
+}
+.text-blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    color: #000000;
 }
