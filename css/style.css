@@ -69,11 +69,12 @@ h6,
     width: 100px;
 }
 .btn.btn-primary:hover {
-    background-color: #5f1525;
+    background-color: #242583;
+
     color: #fff !important;
 }
 .btn-primary{
-    background-color: #ff0043;
+    background-color: #2f2fa2;
     color: #FFFFFF;
 }
 .btn {
@@ -130,7 +131,7 @@ h6,
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: #ff0043;
+    color: #242583;
 }
 
 .navbar .dropdown-toggle::after {
@@ -183,7 +184,7 @@ h6,
 
 /*** Events Start ***/
 .event .tab-class .nav-item a.active {
-    background: #ff0047 !important;
+    background: #2f2fa2 !important;
 }
 
 .event .event-img .event-overlay {
@@ -192,7 +193,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: #ff0606c3;
+    background: #2f2fa2c3;
     border-radius: 8px;
     transition: 0.5s;
     opacity: 0;
@@ -222,7 +223,7 @@ h6,
     top: 0;
     left: 0;
     bottom: auto;
-    background-color: #ff0047;
+    background-color: #2f2fa2;
     border-radius: 8px;
     transition: 1s;
 }
@@ -584,7 +585,7 @@ h6,
 
 /*  */
 .text-primare {
-    color: #ff0043;
+    color: #2f2fa2;
 }
 .my-code{
     color: #000000;
