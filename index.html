@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CaterServ - Catering Services Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start -->
+    <div class="container-fluid nav-bar ">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-4">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-primare fw-bold mb-0">C<span class="text-dark">S</span> </h1>
+
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item color nav-link active">Asosiy</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-item nav-link hover-page my-element.touched">Loyiha haqida</a>
+                            <div class="dropdown-menu bg-light">
+                                <a href="testimonial.html" class="dropdown-item">Loyihaning maqsad va vazifalari</a>
+                                <a href="about.html" class="dropdown-item">Loyiha bo'yicha maqolalar</a>
+                                <a href="blog.html" class="dropdown-item">OAV biz haqimizda</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="service.html" class="nav-item nav-link hover-page">Ilmiy tadqiqotlar</a>
+                            <div class="dropdown-menu bg-light">
+                                <a href="book.html" class="dropdown-item">dissertasiyalar</a>
+                                <a href="darsliklar.html" class="dropdown-item">Darsliklar</a>
+                                <a href="exam.html" class="dropdown-item">Onlayn imtihonga tayyorlanish</a>
+                            </div>
+                        </div>
+                      
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-item nav-link hover-page .my-element.touched">Gallereya</a>
+                            <div class="dropdown-menu bg-light">
+                                <a href="event.html" class="dropdown-item">Fotosuratlar </a>
+                                <a href="videos.html" class="dropdown-item">Videolar</a>
+
+                            </div>
+                        </div>
+
+                        <a href="contact.html" class="nav-item nav-link">Aloqa</a>
+                    </div>
+                    <button
+                        class="btn-search background btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex"
+                        data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                    <a href="" class="btn btn-primary background py-2 px-4 d-none d-xl-inline-block rounded-pill">Kirish
+                        </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control bg-transparent p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <div id="earth" class="container-fluid bg-light py-6 my-6 mt-0 earth">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="home_book-one showPopupBtn">
+                    <img class="popup-trigger" data-popup="left-popup" src="img/bookleft.png" alt="img">
+                </div>
+                <!-- ... -->
+                <div class="popup">
+                    <div class="popup-content">
+                        <span class="close closePopupBtn">&times;</span>
+                        <div id="magazine">
+                            <div class="hard"><p>Ushbu maqolada Sharq adabiyoti xususan o’zbek, arab, xitoy, koreys va
+                                yapon xalqlarining ma’naviy boyliklari, adabiyoti tarixi, ijod namunalari yoritilib
+                                berilgan. Shu bilan bir qatorda har bir sharq adabiyotining o’zbek adabiyoti bilan
+                                bog’liqligi, o’xshashligi, farqlari va o’ziga xos jihatlariga ham duch kelamiz. Qadimgi
+                                sharq adabiyotining hozirgi zamondagi talqini qanday? Hozirgi o’zbek, arab, xitoy,
+                                koreys va yapon adabiyotda qanday o’zgarishlar yuz berayapti va u o’z ta’sirini
+                                qanchalik ko’rsatayapti? kabi savollarga javob olishingiz mumkin. Adabiyotning har bir
+                                jabhada qanchalik muhimlililgini ushbu maqolada ko’rishimiz mumkin</p>
+                            </div>
+                            <div class="hard"><p>Ushbu maqolada Sharq adabiyoti xususan o’zbek, arab, xitoy, koreys va
+                                yapon xalqlarining ma’naviy boyliklari, adabiyoti tarixi, ijod namunalari yoritilib
+                                berilgan. Shu bilan bir qatorda har bir sharq adabiyotining o’zbek adabiyoti bilan
+                                bog’liqligi, o’xshashligi, farqlari va o’ziga xos jihatlariga ham duch kelamiz. Qadimgi
+                                sharq adabiyotining hozirgi zamondagi talqini qanday? Hozirgi o’zbek, arab, xitoy,
+                                koreys va yapon adabiyotda qanday o’zgarishlar yuz berayapti va u o’z ta’sirini
+                                qanchalik ko’rsatayapti? kabi savollarga javob olishingiz mumkin. Adabiyotning har bir
+                                jabhada qanchalik muhimlililgini ushbu maqolada ko’rishimiz mumkin</p></div>
+                        </div>
+
+                        <div class="popup2" id="left-popup">
+                            <p>Ushbu maqolada Sharq adabiyoti xususan o’zbek, arab, xitoy, koreys va
+                                yapon xalqlarining ma’naviy boyliklari, adabiyoti tarixi, ijod namunalari yoritilib
+                                berilgan. Shu bilan bir qatorda har bir sharq adabiyotining o’zbek adabiyoti bilan
+                                bog’liqligi, o’xshashligi, farqlari va o’ziga xos jihatlariga ham duch kelamiz. Qadimgi
+                                sharq adabiyotining hozirgi zamondagi talqini qanday? Hozirgi o’zbek, arab, xitoy,
+                                koreys va yapon adabiyotda qanday o’zgarishlar yuz berayapti va u o’z ta’sirini
+                                qanchalik ko’rsatayapti? kabi savollarga javob olishingiz mumkin. Adabiyotning har bir
+                                jabhada qanchalik muhimlililgini ushbu maqolada ko’rishimiz mumkin</p>
+                            <!-- Добавьте нужные тексты для левого изображения -->
+                            <button class="close-popup">Закрыть</button>
+                        </div>
+                
+                        <div class="popup2" id="right-popup">
+                            <p>Текст по другой теме...</p>
+                            <!-- Добавьте нужные тексты для правого изображения -->
+                            <button class="close-popup">Закрыть</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="box"></div>
+                <div class="home_book-two showPopupBtn">
+                    <img class="popup-trigger" data-popup="right-popup" src="img/bookright.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- About Satrt -->
+    <div class="container-fluid py-6">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                    <img src="img/about.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
+                    <small
+                        class="d-inline-block fw-bold text-dark text-uppercase bg-light border border_my border-primary rounded-pill px-4 py-1 mb-3">Loyiha</small>
+                    <p class="display-5 mb-4">Loyiha haqida</p>
+                    <p class="">Mahalliy va xorijiy mutaxassislarni jalb etgan holda, chet ellarda saqlanayotgan,
+                        mamlakatimiz
+                        tarixi va madaniyatiga oid turkiy qoʼlyozmalarni aniqlash, ularning toʼliq maʼlumotlar bazasi —
+                        raqamli qomusini yaratish, uni muntazam yangilab borish, chet el fondlaridagi turkiy
+                        qoʼlyozmalarning faksimile nusxalarini, foto va videotasvirlarini yurtimizga olib kelish,
+                        tegishli ilmiy markazlar, xususan, Аbu Rayhon Beruniy nomidagi Sharqshunoslik instituti bilan
+                        birgalikda ilmiy tadqiqotlar olib borib, erishilgan natijalarni ilmiy muomalaga kiritish
+                        borasidagi ishlarni muvofiqlashtirish;</p>
+                    <div class="row g-4 text-dark mb-5">
+                        <div class="col-sm-6">
+                            <i class="fas fa-share text-primary me-2"></i>Ishonchli Jamoa
+                        </div>
+                        <div class="col-sm-6">
+                            <i class="fas fa-share text-primary me-2"></i>Loyiha egalari
+                        </div>
+                        <div class="col-sm-6">
+                            <i class="fas fa-share text-primary me-2"></i>24/7 Hamisha Aloqada
+                        </div>
+                        <div class="col-sm-6">
+                            <i class="fas fa-share text-primary background me-2"></i>Biz haqimizda
+
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-primary py-3 px-5 rounded-pill">Loyiha<i
+                            class="fas fa-arrow-right ps-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Fact Start-->
+    <div class="container-fluid faqt py-6">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.3s">
+                            <div class="faqt-item bg-primary background rounded p-4 text-center">
+                                <i class="fas fa-users fa-4x mb-4 text-white"></i>
+                                <h1 class="display-4 fw-bold" data-toggle="counter-up">689</h1>
+                                <p class="text-dark text-uppercase fw-bold mb-0">Happy Customers</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.5s">
+                            <div class="faqt-item bg-primary background rounded p-4 text-center">
+                                <i class="fas fa-users-cog fa-4x mb-4 text-white"></i>
+                                <h1 class="display-4 fw-bold" data-toggle="counter-up">107</h1>
+                                <p class="text-dark text-uppercase fw-bold mb-0">Expert Chefs</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s">
+                            <div class="faqt-item bg-primary background rounded p-4 text-center">
+                                <i class="fas fa-check fa-4x mb-4 text-white"></i>
+                                <h1 class="display-4 fw-bold" data-toggle="counter-up">253</h1>
+                                <p class="text-dark text-uppercase fw-bold mb-0">Events Complete</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                    <div class="video">
+                        <button type="button" class="btn btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid service py-6">
+        <div class="container">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small
+                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Xizmatlar</small>
+                <p class="display-5 mb-5">Xizmatlar</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <img src="/img/icon1.png" alt="icon">
+                                <!-- <h4 class="mb-3">Wedding Services</h4> -->
+                                <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <img src="/img/icon2.png" alt="icon">
+                                <!-- <h4 class="mb-3">Corporate Catering</h4> -->
+                                <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <img src="/img/icon3.png" alt="icon">
+                                <!-- <h4 class="mb-3">Cocktail Reception</h4> -->
+                                <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
+                    <div class="bg-light rounded service-item">
+                        <div class="service-content d-flex align-items-center justify-content-center p-4">
+                            <div class="service-content-icon text-center">
+                                <img src="/img/icon4.png" alt="icon">
+                                <!-- <h4 class="mb-3">Bento Catering</h4> -->
+                                <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
+                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Events Start -->
+    <div class="container-fluid event py-6">
+        <div class="container">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small
+                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">
+                    Korgazmalar</small>
+                <p class="display-5 mb-5">Korgazmalar</p>
+            </div>
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp"
+                    data-wow-delay="0.1s">
+                    <li class="nav-item p-2">
+                        <a id="myElement" class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active"
+                            data-bs-toggle="pill" href="#tab-1">
+                            <span class="my-button" onclick="changeColor()" class="text-dark "
+                                style="width: 150px;">Barchasi</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a id="myElement" class="d-flex py-2 mx-2 border border-primary bg-light rounded-pill"
+                            data-bs-toggle="pill" href="#tab-2">
+                            <span class="my-button" onclick="changeColor()" class="text-dark "
+                                style="width: 150px;">Osiyo</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-3">
+                            <span class="my-button" onclick="changeColor()" class="text-dark"
+                                style="width: 150px;">Africa</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-4">
+                            <span class="my-button" onclick="changeColor()" class="text-dark"
+                                style="width: 150px;">Janubiy Amerika</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-5">
+                            <span class="my-button" onclick="changeColor()" class="text-dark"
+                                style="width: 150px;">Evropa</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-1.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Wedding</h4>
+                                                <a href="img/event-1.jpg" data-lightbox="event-1" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-2.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Evropa</h4>
+                                                <a href="img/event-2.jpg" data-lightbox="event-2" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-3.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Evropa</h4>
+                                                <a href="img/event-3.jpg" data-lightbox="event-3" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-4.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Osiyo</h4>
+                                                <a href="img/event-4.jpg" data-lightbox="event-4" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-5.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">osiyo</h4>
+                                                <a href="img/event-5.jpg" data-lightbox="event-5" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-6.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Janubiy Amerika</h4>
+                                                <a href="img/event-6.jpg" data-lightbox="event-6" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-7.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Janubiy Amerika</h4>
+                                                <a href="img/event-7.jpg" data-lightbox="event-7" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-8.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Africa</h4>
+                                                <a href="img/event-8.jpg" data-lightbox="event-17" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-1.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Osiyo</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-8" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-2.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Osiyo</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-9" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-3.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Africa</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-10" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-4.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Africa</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-11" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-4" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-5.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Janibiy America</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-12" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-6.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Janubiy America</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-13" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-5" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-7.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Evropa</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-14" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="img/event-8.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Evropa</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-15" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Events End -->
+
+
+
+
+
+
+    <!-- Team Start -->
+    <div class="container-fluid team py-6">
+        <div class="container">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small
+                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Jamoa
+                </small>
+                <h1 class="my-code">Hamkasblar va Director</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid rounded-top " src="img/event-1.jpg" alt="">
+                        <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                            <h4 class="">Laylo Umarova</h4>
+                            <p class="text-white mb-0">Director</p>
+                        </div>
+                        <div class="team-icon d-flex flex-column justify-content-center m-4">
+                            <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fas fa-share-alt"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid rounded-top " src="img/event-2.jpg" alt="">
+                        <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                            <h4 class="">Shodiya Mahkamova</h4>
+                            <p class="text-white mb-0">Director Yordamchisi</p>
+                        </div>
+                        <div class="team-icon d-flex flex-column justify-content-center m-4">
+                            <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fas fa-share-alt"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid rounded-top " src="img/event-3.jpg" alt="">
+                        <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                            <h4 class="">Otamurod Ergashov</h4>
+                            <p class="text-white mb-0">Yordamchi</p>
+                        </div>
+                        <div class="team-icon d-flex flex-column justify-content-center m-4">
+                            <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fas fa-share-alt"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.7s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid rounded-top " src="img/event-4.jpg" alt="">
+                        <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                            <h4 class="">Asilbek Yoldoshev</h4>
+                            <p class="text-white mb-0">Operator</p>
+                        </div>
+                        <div class="team-icon d-flex flex-column justify-content-center m-4">
+                            <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fas fa-share-alt"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid blog py-6">
+        <div class="container">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small
+                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Yangiliklar
+                </small>
+                <p class="display-5 mb-5">Yangiliklar</p>
+            </div>
+            <div class="row gx-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                    <div class="blog-item">
+                        <div class="overflow-hidden rounded">
+                            <img src="img/blog-1.jpg" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="blog-content mx-4 d-flex rounded bg-light">
+                            <div class="text-dark bg-primary rounded-start">
+                                <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                    <p class="fw-bold mb-0">16</p>
+                                    <p class="fw-bold mb-0">Sep</p>
+                                </div>
+                            </div>
+                            <a href="#" class="text-blog">How to get more test in your food from</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
+                    <div class="blog-item">
+                        <div class="overflow-hidden rounded">
+                            <img src="img/blog-2.jpg" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="blog-content mx-4 d-flex rounded bg-light">
+                            <div class="text-dark bg-primary rounded-start">
+                                <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                    <p class="fw-bold mb-0">16</p>
+                                    <p class="fw-bold mb-0">Sep</p>
+                                </div>
+                            </div>
+                            <a href="#" class="text-blog">How to get more test in your food from</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
+                    <div class="blog-item">
+                        <div class="overflow-hidden rounded">
+                            <img src="img/blog-3.jpg" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="blog-content mx-4 d-flex rounded bg-light">
+                            <div class="text-dark bg-primary rounded-start">
+                                <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                    <p class="fw-bold mb-0">16</p>
+                                    <p class="fw-bold mb-0">Sep</p>
+                                </div>
+                            </div>
+                            <a href="#" class="text-blog">How to get more test in your food from</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h1 class="text-primary">C<span class="text-dark">S</span></h1>
+                        <p class="lh-lg mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs
+                            condmentum leo massamollis its estiegittis miristum.</p>
+                        <div class="footer-icon d-flex">
+                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Special Facilities</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Evropa
+                                Burger</a>
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Osiyo</a>
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Janubiy
+                                America
+                            </a>
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Africa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Contact Us</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 123 Street, New York, USA</p>
+                            <p><i class="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</p>
+                            <p><i class="fas fa-envelope text-primary me-2"></i> info@example.com</p>
+                            <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-light"><a class="footer-text" href="#"><i
+                                class="fas fa-copyright text-light me-2"></i>Your Site
+                            Name</a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 my-auto text-center text-md-end text-white">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="footer-text" class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="turn.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#magazine').turn({
+                gradients: true,
+                acceleration: true,
+            });
+
+            // Добавляем свойство width: 50vw;
+            $('#magazine').css('width', '50vw');
+        });
+    </script>
+    
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    </script>
+</body>
+
+</html>
